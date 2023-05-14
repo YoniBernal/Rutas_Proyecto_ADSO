@@ -95,6 +95,7 @@
     <Compile Include="Datos\ClProcesosSQL.cs" />
     <Compile Include="Datos\ClSesion.cs" />
     <Compile Include="Entidades\ClLoginE.cs" />
+    <Compile Include="Logica\ClEncripL.cs" />
     <Compile Include="Logica\ClSesionL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sesion.aspx.cs">

@@ -24,40 +24,22 @@ namespace SitioWebRutas
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control txtcorreo.
+        /// Control txtUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcorreo;
+        protected global::System.Web.UI.WebControls.TextBox txtUsuario;
 
         /// <summary>
-        /// Control txtcontrasena.
+        /// Control txtClave.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcontrasena;
-
-        /// <summary>
-        /// Control chkpaciente.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkpaciente;
-
-        /// <summary>
-        /// Control chkmedico.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkmedico;
+        protected global::System.Web.UI.WebControls.TextBox txtClave;
 
         /// <summary>
         /// Control btnSesionIni.
@@ -69,39 +51,39 @@ namespace SitioWebRutas
         protected global::System.Web.UI.WebControls.Button btnSesionIni;
 
         /// <summary>
-        /// Control txtcorr.
+        /// Control txtcrr.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcorr;
+        protected global::System.Web.UI.WebControls.TextBox txtcrr;
 
         /// <summary>
-        /// Control txtcntr.
+        /// Control txtcn.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcntr;
+        protected global::System.Web.UI.WebControls.TextBox txtcn;
 
         /// <summary>
-        /// Control txttipo.
+        /// Control txttip.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttipo;
+        protected global::System.Web.UI.WebControls.TextBox txttip;
 
         /// <summary>
-        /// Control btnrgusu.
+        /// Control btnguardar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnrgusu;
+        protected global::System.Web.UI.WebControls.Button btnguardar;
     }
 }

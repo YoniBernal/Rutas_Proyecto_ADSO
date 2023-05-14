@@ -19,26 +19,27 @@ namespace SitioWebRutas
 
         protected void btnSesionIni_Click(object sender, EventArgs e)
         {
-            string correo = txtcontrasena.Text;
-            string clave = txtcorreo.Text;
+            string correo = txtUsuario.Text;
+            string clave = txtClave.Text;
+
+            ClEncripL ddd = new ClEncripL();
+            string h = ddd.mtdescri(txtClave.Text);
 
 
-            ClSesionL sesionLogi = new ClSesionL();
-            ClLoginE entidses = sesionLogi.mtdLogicaDatos(correo, clave);
+            ClSesionL sesionL = new ClSesionL();
+            ClLoginE datosE = sesionL.mtdLogicaDatos(correo, clave);
 
-            if (entidses != null)
+            if (datosE != null )
             {
-                Session["Usuario"] = entidses.Nombres + "" + entidses.Apelidos;
+                Session["Usuario"] = datosE.Nombres + " " + datosE.Apelidos;
                 Response.Redirect("~/Vista/Proviniciaa.aspx");
+
             }
             else
-            {
-
+            { 
+            
             }
-            //else
-            //{
-            //    MessageBox.Show("Errir");
-            //}
+
         }
     }
 }

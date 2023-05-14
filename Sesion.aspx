@@ -30,31 +30,18 @@
       <div class="sign-in-htm">
         <div class="group">
           <label for="user" class="label">Correo electronico</label>
-            <asp:TextBox ID="txtcorreo"  type="text" class="input"   runat="server"></asp:TextBox>
+
+            <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
 <%--            <input id="user" type="text" class="input">--%>
         </div>
         <div class="group">
           <label for="pass" class="label">Contraseña</label>
-          <asp:TextBox ID="txtcontrasena"  type="text" class="input"   runat="server"></asp:TextBox>
-
+            <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
         </div>
 
 
 
-        <div class="group">
-              <p>
-      <asp:CheckBox ID="chkpaciente" runat="server"/>
-    <label for="remember">Paciente</label>
-  </p>
-       <p>
-      <asp:CheckBox ID="chkmedico" runat="server" />
-    <label for="remember">Medico</label>
-  </p>
-
-        </div>
-
-
-
+      
         <div class="group">
         </div>
         <div class="hr">
@@ -73,19 +60,19 @@
       <div class="sign-up-htm">
         <div class="group">
           <label for="user" class="label">Correo electronico</label>
-            <asp:TextBox ID="txtcorr" type="text" class="input"   runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtcrr" type="text" class="input"   runat="server"></asp:TextBox>
         </div>
         <div class="group">
           <label for="pass" class="label">Contraseña</label>
-            <asp:TextBox ID="txtcntr"  type="text" class="input"   runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtcn"  type="text" class="input"   runat="server"></asp:TextBox>
         </div>
         <div class="group">
           <label for="pass" class="label">Tipo de usuario</label>
-            <asp:TextBox ID="txttipo"  type="text" class="input"   runat="server"></asp:TextBox>
+            <asp:TextBox ID="txttip"  type="text" class="input"   runat="server"></asp:TextBox>
         </div>
         <div class="group">
 
-          <asp:Button ID="btnrgusu" CssClass="btn btn-primary" runat="server" Text="Guardar" />
+          <asp:Button ID="btnguardar" CssClass="btn btn-primary" runat="server" Text="Guardar" />
 <%--          <input type="submit" class="button" value="Sign Up">--%>
         </div>
         <div class="hr"></div>
