@@ -11,7 +11,7 @@ namespace SitioWebRutas.Datos
         SqlConnection conexion = null;
             public SqlConnection mtdConexion()
             {
-                conexion = new SqlConnection("Data Source=SOGAPRRBCFSD551;Initial Catalog=R_Boyaca;Integrated Security=True");
+                conexion = new SqlConnection("Data Source=DESKTOP-CQMIB01;Initial Catalog=R_Boyaca;Integrated Security=True");
                 conexion.Open();
                 return conexion;
             }

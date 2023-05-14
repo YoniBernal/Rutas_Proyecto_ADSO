@@ -16,14 +16,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
+
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-
-
-
+        <div></div>
+        
             <div class="grid text-center" style="--bs-columns: 3;">
 
                 <h2>Rutas Boyaca</h2>
@@ -46,13 +45,13 @@
                     <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="Imagenes/descarga%20(1)%20(1).jpg" alt="Los Angeles" class="d-block" style="width: 100%" height="400vh" min-height="300px" />
+                            <img src="Imagenes/descarga%20(1)%20(1).jpg" alt="Los Angeles" class="d-block" style="width: 100%" height="400" min-height="300px" />
                         </div>
                         <div class="carousel-item">
-                            <img src="#" alt="Chicago" class="d-block" style="width: 100%" height="400vh" min-height="300px" />
+                            <img src="#" alt="Chicago" class="d-block" style="width: 100%" height="400" min-height="300px" />
                         </div>
                         <div class="carousel-item">
-                            <img src="Imagenes/descarga%20(3)%20(1).jpg" alt="New York" class="d-block" style="width: 100%" height="400vh" min-height="300px" />
+                            <img src="Imagenes/descarga%20(3)%20(1).jpg" alt="New York" class="d-block" style="width: 100%" height="400" min-height="300px" />
                         </div>
                     </div>
 

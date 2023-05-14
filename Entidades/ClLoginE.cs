@@ -7,9 +7,15 @@ namespace SitioWebRutas.Entidades
 {
     public class ClLoginE
     {
-        public string usuario { get; set; }
+        public int idUsuario { get; set; }
 
-        public string clave { get; set; }
+        public string Nombres { get; set; }
+
+        public string Apelidos { get; set; }
+
+        public string Correo { get; set; }
+
+        public string Clave { get; set; }
 
     }
 }
