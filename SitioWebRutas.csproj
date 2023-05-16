@@ -72,7 +72,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Index.aspx" />
     <Content Include="Sesion.aspx" />
+    <Content Include="Vista\CSS\index.css" />
     <Content Include="Vista\CSS\video.css" />
     <Content Include="Vista\Imagenes\fondo.mp4" />
     <Content Include="Vista\Imagenes\paisaje.mp4" />
@@ -95,6 +97,13 @@
     <Compile Include="Datos\ClProcesosSQL.cs" />
     <Compile Include="Datos\ClSesion.cs" />
     <Compile Include="Entidades\ClLoginE.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Logica\ClEncripL.cs" />
     <Compile Include="Logica\ClSesionL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

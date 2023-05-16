@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SitioWebRutas.Vista
+namespace SitioWebRutas
 {
 
 
-    public partial class Principal
+    public partial class Index
     {
 
         /// <summary>
