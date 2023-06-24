@@ -433,7 +433,7 @@ input {
     </label>
     <p class="forgot-pass"></p>
       <label>
-		  	  <asp:Button ID="btnsesionn" runat="server" Text="Button" Onclick="btnsesionn_Click" />
+		  	  <asp:Button ID="btnInicioS" runat="server" Text="Button" Onclick="btnInicioS_Click" />
       </label>
   </div>
   <div class="sub-cont">

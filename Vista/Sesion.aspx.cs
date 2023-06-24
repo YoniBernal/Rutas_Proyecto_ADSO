@@ -19,6 +19,7 @@ namespace ADSO_Proyecto_Rutas.Vista
             }
         }
 
+
         protected void roles()
         {
             ClInicioSesionL obRol = new ClInicioSesionL();
@@ -31,55 +32,70 @@ namespace ADSO_Proyecto_Rutas.Vista
             ddlListUsuario.DataBind();
         }
 
-
-        protected void btnsesionn_Click(object sender, EventArgs e)
-        {
-            string correo = txtCorreoUsuario.Text;
-            string clave = txtClaveUsuario.Text;
-
-            ClEncripL ddd = new ClEncripL();
-            string h = ddd.mtdescri(txtClaveUsuario.Text);
-
-            ClSesionL SeSIl = new ClSesionL();
-            ClLoginE sesionE = SeSIl.mtdLogicaDatos(correo, clave);
-
-            if (sesionE != null)
-            {
-                Session["Usuario"] = sesionE.Nombres + " " + sesionE.Apelidos;
-                string rolSeleccionado = ddlListUsuario.SelectedItem.Value;
-
-                if (rolSeleccionado == "Alcaldia")
-                {
-                    Response.Redirect("~/Vista/Municipios.aspx");
-                }
-                else if (rolSeleccionado == "Usuario")
-                {
-                    Response.Redirect("~/Vista/Mapa.aspx");
-
-                }
-                else if (rolSeleccionado == "Turista")
-                {
-                    
-                }
-                else if (rolSeleccionado == "Comerciante")
-                {
-                    
-                }
-
-            }
-            else
-            {
-                lblMensaje.Text = "erorr";
-            }
-        }
-
-
-    
-
+       
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
+            ClLoginE registrarE = new ClLoginE();
+            //registrarE.Correo = .Text;
+            //registrarE.Clave = txtClaveR.Text;
+
+
+            ClSesionL objRegisL = new ClSesionL();
+            int regis = objRegisL.mtdregistroL(registrarE);
+
+
+            string mensaje = "¡El registro fue exitoso!!";
+            string script = "<script type=\"text/javascript\">alert('" + mensaje + "');</script>";
+
+
+            if (regis == 1)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "Mensaje", script);
+            }
 
         }
+
+        
+
+        protected void btnInicioS_Click(object sender, EventArgs e)
+        {
+            string correo = txtCorreoUsuario.Text;
+            string clave = txtClaveUsuario.Text;
+            
+
+            ClSesionL sesionL = new ClSesionL();
+            ClLoginE datosE = sesionL.mtdLogicaDatos(correo, clave);
+            if (datosE != null)
+            {
+                Session["Usuario"] = datosE.Nombres + " " + datosE.Apelidos;
+
+                if (ddlListUsuario.SelectedValue == "1")
+                {
+                    Session["Turista"] = ddlListUsuario;
+                    Response.Redirect("~/Vista/Mapa.aspx");
+
+                }
+                else if (ddlListUsuario.SelectedValue == "2")
+                {
+                    Session["Comerciante"] = ddlListUsuario;
+                    Response.Redirect("~/Vista/Ruta.aspx");
+                }
+                else if (ddlListUsuario.SelectedValue == "3")
+                {
+                    Session["Alcalde"] = ddlListUsuario;
+                    Response.Redirect("~/Vista/Municipios.aspx");
+                }
+                else if (ddlListUsuario.SelectedValue == "4")
+                {
+                    Session["Administrador"] = ddlListUsuario;
+                    Response.Redirect("~/Vista/Ruta.aspx");
+                }
+            }
+
+        }
+
     }
 }
+
+
