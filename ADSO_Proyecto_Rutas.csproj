@@ -70,6 +70,7 @@
     <Content Include="Global.asax" />
     <Content Include="Vista\Css\CrearRuta.css" />
     <Content Include="Vista\Css\Mapa.css" />
+    <Content Include="Vista\Css\Municipio.css" />
     <Content Include="Vista\Imagenes\MapaBoyacà.png" />
     <Content Include="Vista\js\CrearRuta.js" />
     <Content Include="Vista\js\Mapa.js" />

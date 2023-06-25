@@ -24,7 +24,7 @@ namespace ADSO_Proyecto_Rutas.Vista
                 {
                     ClEntidades muni = municipio[0];
                     lblNombre.Text = muni.Nombre;
-                    lblNomC.Text = lblNombre.Text;
+                    //lblNomC.Text = lblNombre.Text;
                     lblN_Habitantes.Text = muni.Numerohabitantes;
                     lblLatitud.Text = muni.Latitud;
                     lblLongitud.Text = muni.Longitud;
@@ -35,5 +35,6 @@ namespace ADSO_Proyecto_Rutas.Vista
                 }
             }
         }
+              
     }
 }
