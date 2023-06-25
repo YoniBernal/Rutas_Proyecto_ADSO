@@ -22,7 +22,7 @@
     </div>
   </div>
   <br />
-  <asp:image imageurl="https://th.bing.com/th/id/OIP.jNym1ebb3RQUrmtVtbLYfgHaEK?pid=ImgDet&rs=1" runat="server" />
+  <asp:image imageurl="#" runat="server" />
 </div>
 
 
@@ -41,7 +41,7 @@
             <div class="">
                 <div class="face face1">
                     <div class="content">
-                        <img src="https://th.bing.com/th/id/OIP.jNym1ebb3RQUrmtVtbLYfgHaEK?pid=ImgDet&rs=1" />
+                        <img src="#" />
                         <h3>Terreno</h3>
                     </div>
                 </div>

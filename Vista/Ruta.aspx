@@ -116,7 +116,7 @@ h1:before {
                 <div>
                     <asp:Image ID="ImageControl" runat="server" />
                 </div>
-
+                
                 <div class="col-md-6">
                     <div id="canvas-container">
                         <canvas id="canvas"></canvas>
